@@ -1,5 +1,14 @@
-setup() {
-  AddDocument(photo, video, film, cartography, info);
-  AddTime (episode1, episode2, episode3, episode4);
-  AddActors (architecture, people);
+let url = 'https://www.piontapark.it/';
+let postData = { userId: 1, title: 'Episode 4', body: 'Il Pionta Attuale' };
+
+function setup() {
+  createCanvas(100, 100);
+  background(200);
+}
+
+function mousePressed() {
+  httpPost(url, 'json', postData, function(result) {
+    strokeWeight(2);
+    text(result.body, mouseX, mouseY);
+  });
 }
