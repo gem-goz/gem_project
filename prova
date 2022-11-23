@@ -1,14 +1,8 @@
-let url = 'https://www.piontapark.it/';
-let postData = { userId: 1, title: 'Episode 4', body: 'Il Pionta Attuale' };
-
-function setup() {
-  createCanvas(100, 100);
-  background(200);
+function preload() {
+  img = loadImage('images/buildings1.jpg');
+  text = loadtext('text/infobuildings.doc);
+  video = loadvideo('video/buildings.mp3);
 }
 
-function mousePressed() {
-  httpPost(url, 'json', postData, function(result) {
-    strokeWeight(2);
-    text(result.body, mouseX, mouseY);
-  });
-}
+
+
