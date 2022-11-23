@@ -1,1 +1,5 @@
-
+setup() {
+  addDocument(photo, video, film, cartography, info);
+  differentiateTime (episode1, episode2, episode3, episode4);
+  seperateActors (architecture, people);
+}
