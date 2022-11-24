@@ -1,8 +1,4 @@
-function preload() {
-  img = loadImage('images/buildings1.jpg');
-  text = loadtext('text/infobuildings.doc);
-  video = loadvideo('video/buildings.mp3);
-}
+opuscoli Arnaldo Pieraccini
 
 
 
